@@ -1,0 +1,286 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b68eb");
+  
+@font-face {
+  font-family: 'MPINo507';
+  src: url('../fonts/font.woff');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #2F2639;
+	background-image: url('../media/tiger-background.png');
+	background-attachment: fixed;
+	background-size: 50% auto;
+}
+/*FONTS*/
+	@font-face{
+		font-family: 'credits';
+		src: url('../fonts/credits.woff');
+	}
+	@font-face{
+		font-family: 'proper';
+		src: url('../fonts/proper.otf');
+	}
+	@font-face{
+		font-family: 'title';
+		src: url('../fonts/title.otf');
+	}
+/*HEADER*/
+	header{
+		background-color: #B9190E;
+		box-shadow: 0 4px 5px #000;
+		left: 0;
+		margin: 0 auto;
+		max-width: 1500px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	.header-container{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 100%;
+	}
+	.header-top{
+		background-color: #EEDCC5;
+		display: flex;
+		justify-content: flex-end;
+		width: 1500px;
+	}
+	.header-top-container{
+		display: flex;
+		font-family: arial, sans-serif;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1200px;
+		padding: 3px 0;
+		width: 100%;
+	}
+	.header-top a{
+		color: #B9190E;
+		font-size: 14px;
+	}
+	.header-bottom{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.header-bottom a{
+		color: #EEDCC5;
+		font-family: 'title', cursive;
+		font-size: 32px;
+		padding-top: 5px;
+		text-decoration: none;
+	}
+/*BODY WRAPPER*/
+	.body-wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+/*MAIN LOGO*/
+	.main-logo{
+		margin: 0 auto;
+		max-width: 650px;
+		width: 100%;
+	}
+	.main-logo img{
+		max-width: 100%;
+	}
+/*BUY TICKETS*/
+	.buy-tickets{
+		height: 250px;
+		margin: 50px auto;
+		max-width: 1500px;
+		width: 100%;
+	}
+	.buy-tickets-container{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		position: relative;
+		width: 360px;
+	}
+	.buy-tickets-text-wrap {
+		filter: drop-shadow(-3px 5px 5px rgba(255,255,255,1));
+	}
+	.tag {
+  		background-color: #B9190E;
+  		/*clip-path: polygon(0 50%, 100% 50%, 100% 83%, 4% 100%);*/
+  		clip-path: polygon(0 135px, 100% 50%, 100% 83%, 4% 100%);
+  		padding: 8rem 15rem 8rem 10rem;
+	}
+	.buy-tickets-buy-tickets{
+		align-items: center;
+		color: #EEDCC5;
+		display: flex;
+		font-family: bebas-neue, sans-serif;
+		font-size: 90px;
+		height: 120px;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		width: 400px;
+	}
+	.buy-tickets-buy-tickets p{
+		text-shadow: -4px -3px 6px #000;
+	}
+	.buy-tickets-click-here{
+		background-color: #000;
+		color: #fff;
+		font-family: bebas-neue, sans-serif;
+		font-size: 32px;
+		margin-top: 80px;
+		padding: 0 10px;
+		position: absolute;
+		right: 0;
+	}
+/*JOE EXOTIC VIDEO*/
+	.joe-video-1{
+		background-image: linear-gradient(to right, #5C5E5F, #D0D2D4, #5C5E5F);
+		border-bottom: 10px solid transparent;
+		border-top: 10px solid transparent;
+	}
+	.joe-video-1 .jarallax{
+		height: 600px;
+	}
+/*RED BOXES*/
+	.red-boxes{
+		margin: 100px auto;
+		max-width: 1500px;
+		width: 100%;
+	}
+	.red-boxes-container{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1100px;
+		width: 100%;
+	}
+	.red-box{
+		background-color: #B9190E;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+		padding: 10px;
+		text-align: center;
+		width: 500px;
+	}
+	.red-box h4{
+		color: #EEDCC5;
+		font-family: 'MPINo507', sans-serif;
+		font-size: 56px;
+	}
+	.red-box-p{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-evenly;
+	}
+	.red-box p{
+		color: #EEDCC5;
+		font-family: 'bebas-neue', sans-serif;
+		font-size: 24px;
+	}
+/*TIKTOK*/
+	.tiktok-title{
+		margin: 0 auto;
+		max-width: 1000px;
+		position: relative;
+	}
+	.tiktok-title-container{
+		color: #fff;
+  		font-size: 80px;
+  		font-family: 'MPINo507', sans-serif;
+  		font-weight: 100;
+  		animation: shaking 1s steps(6, end) infinite;
+  		text-align: center;
+
+	}
+	@keyframes shaking{
+	  0%{
+	    /* Using filter cause text-shadow doesn't support svgs */
+	    filter: drop-shadow(3px 3px 0px #0ff) drop-shadow(-3px -3px 0px #f00);
+	    transform: translate(1px, 1px);}
+	  20%{
+	    filter: drop-shadow(-3px 3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+	    transform: translate(-2px, 1px);}
+	  40%{
+	    filter: drop-shadow(3px -3px 0px #0ff) drop-shadow(3px -3px 0px #f00);
+	    transform: translate(1px, -1px);}
+	  60%{
+	    filter: drop-shadow(-3px -3px 0px #0ff) drop-shadow(3px 3px 0px #f00);
+	    transform: translate(-1px, -1px);}
+	  80%{
+	    filter: drop-shadow(-2px 3px 0px #0ff) drop-shadow(-3px 2px 0px #f00);
+	    transform: translate(2px, 0px);}
+	  100%{
+	    filter: drop-shadow(-3px 1px 0px #0ff) drop-shadow(1px -3px 0px #f00);
+	    transform: translate(1px, 1px);}
+	}
+	.tiktok-video-container{
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 50px;
+	}
+	.tiktok-video{
+		height: 614px;
+		width: 330px;
+	}
+	.tiktok-text{
+		align-items: center;
+		color: #EEDCC5;
+		display: flex;
+		font-family: 'bebas-neue', sans-serif;
+		font-size: 48px;
+		text-align: center;
+		text-shadow: -4px -3px 6px #000;
+	}
+	.tiktok-text span{
+		color: #B9190E;
+		text-shadow: 1px 1px 3px #fff,
+					-1px -1px 3px #fff,
+					-1px 1px 3px #fff,
+					1px -1px 3px #fff;
+	}
+/*FOOTER*/
+	footer{
+		background-color: #000;
+		margin: 0 auto;
+		max-width: 1500px;
+		width: 100%;
+	}
+	.footer-container{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1200px;
+		padding: 5px 0;
+		width: 100%;
+	}
+/*FOOTER LEFT*/
+	.footer-logos{
+		max-width: 70px;
+	}
+	.footer-logos img{
+		max-width: 100%;
+	}
+/*FOOTER RIGHT*/
+	.footer-right a{
+		color: #EEDCC5;
+		font-size: 18px;
+		margin-left: 5px;
+	}
+
